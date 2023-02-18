@@ -7,6 +7,8 @@ from xglab_metric_example.NaiveXg import NaiveXg
 
 
 class TestNaiveXg(unittest.TestCase):
+    maxDiff = 1024
+
     expected_rows = [
         {'metricId': 0, 'eventUuid': 'penalty', 'teamId': 0, 'matchId': 0, 'playerId': 0,
          'className': 'Penalty', 'value': 0.76, 'teamValue': 0.76},
